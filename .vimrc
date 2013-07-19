@@ -26,9 +26,9 @@ set guioptions-=T
 "au GUIEnter * simalt ~x
 
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-let g:vundle_default_git_proto = 'git'
+"set rtp+=~/.vim/bundle/vundle/
+"call vundle#rc()
+"let g:vundle_default_git_proto = 'git'
 
 call pathogen#infect()
 
