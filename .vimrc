@@ -25,12 +25,11 @@ set guioptions-=T
 "set guioptions-=r
 "au GUIEnter * simalt ~x
 
-filetype off
-"set rtp+=~/.vim/bundle/vundle/
-"call vundle#rc()
-"let g:vundle_default_git_proto = 'git'
-
 call pathogen#infect()
+
+" tagbar plugin
+nmap <F4> :TagbarToggle<CR><C-W><C-W>
+let g:tagbar_left = 1
 
 " ctags plugin
 let Tlist_Exit_OnlyWindow=1
@@ -49,13 +48,6 @@ if filereadable("./filenametags")
     let g:LookupFile_TagExpr = '"./filenametags"'
 endif
 
-" NERD_commenter plugin
-vmap <F2> ,c<space>
-nmap <F2> ,c<space>
-" a space after the left delimiter and before the right delimiter
-let NERDSpaceDelims = 1
-let NERDShutUp = 1
-
 set enc=utf-8
 
 "Enhanced version of the python syntax highlighting script
@@ -63,6 +55,7 @@ let python_highlight_all = 1
 let python_slow_sync = 1
 
 colo candy
+
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
