@@ -28,3 +28,6 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
+[submodule "bundle/tab"]
+	path = bundle/tab
+	url = git://github.com/ervandew/supertab
