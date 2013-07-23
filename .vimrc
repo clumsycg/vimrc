@@ -27,6 +27,10 @@ set guioptions-=T
 
 call pathogen#infect()
 
+"supertab plugin
+let g:SuperTabDefaultCompletionType = "<c-n>"
+let g:SuperTabDefaultCompletionType = "<c-n>"
+
 " tagbar plugin
 nmap <F4> :TagbarToggle<CR><C-W><C-W>
 let g:tagbar_left = 1
