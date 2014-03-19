@@ -27,9 +27,17 @@ set guioptions-=T
 
 call pathogen#infect()
 
-"supertab plugin
-let g:SuperTabDefaultCompletionType = "<c-n>"
-let g:SuperTabDefaultCompletionType = "<c-n>"
+"multiple-cursors
+"ctrl-n: highlights current word under the cursor, Pressing it again finds
+"the next one
+"ctrl-p: remove current virtual cursor and go back to the previous virtual
+"cursor location
+"ctrl-x: remove current virtual cursor and skip to the next virtual cursor
+"location
+
+"vim-expand-region
+map K <Plug>(expand_region_expand)
+map J <Plug>(expand_region_shrink)
 
 " tagbar plugin
 nmap <F4> :TagbarToggle<CR><C-W><C-W>
