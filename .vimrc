@@ -27,6 +27,13 @@ set guioptions-=T
 
 call pathogen#infect()
 
+"Align binding
+" \t=  : align assignments (don't count logic, like == or !=)
+" \t,  : align on commas
+" \t|  : align on vertical bars (|)
+" \tsp : align on whitespace
+" \tt  : align LaTeX tabular tables
+
 "multiple-cursors
 "ctrl-n: highlights current word under the cursor, Pressing it again finds
 "the next one
@@ -36,8 +43,8 @@ call pathogen#infect()
 "location
 
 "vim-expand-region
-map K <Plug>(expand_region_expand)
-map J <Plug>(expand_region_shrink)
+map <C-J> <Plug>(expand_region_expand)
+map <C-K> <Plug>(expand_region_shrink)
 
 " tagbar plugin
 nmap <F4> :TagbarToggle<CR><C-W><C-W>
