@@ -75,7 +75,6 @@ let python_slow_sync = 1
 
 colo candy
 
-
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
@@ -126,6 +125,10 @@ if has("autocmd")
 
   " For all text files set 'textwidth' to 78 characters.
   autocmd FileType text setlocal textwidth=78
+
+  " for C++ source
+  " tabstop = 4, shift width = 4, enable autoindent
+  autocmd FileType cpp set ts=4 shiftwidth=4 autoindent
 
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
