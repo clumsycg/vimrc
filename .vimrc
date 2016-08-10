@@ -127,6 +127,7 @@ if has("autocmd")
   " For all text files set 'textwidth' to 78 characters.
   autocmd FileType text setlocal textwidth=78
 
+  autocmd FileType cpp set tabstop=4 shiftwidth=4 autoindent
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
   " (happens when dropping a file on gvim).

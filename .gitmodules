@@ -31,3 +31,6 @@
 [submodule "bundle/vim-expand-region"]
 	path = bundle/vim-expand-region
 	url = https://github.com/terryma/vim-expand-region
+[submodule "bundle/vim-visual-increment"]
+	path = bundle/vim-visual-increment
+	url = https://github.com/triglav/vim-visual-increment.git
