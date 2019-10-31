@@ -67,6 +67,9 @@ if filereadable("./filenametags")
     let g:LookupFile_TagExpr = '"./filenametags"'
 endif
 
+" rust
+let g:rustfmt_autosave = 1
+
 set enc=utf-8
 
 "Enhanced version of the python syntax highlighting script
@@ -107,7 +110,8 @@ map Q gq
 if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
-  set guifont=Courier\ 10\ Pitch\ 12
+  "  set guifont=Courier\ 10\ Pitch\ 12
+  set guifont=Monaco:h12
 endif
 
 " Only do this part when compiled with support for autocommands.
