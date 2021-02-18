@@ -1,30 +1,30 @@
 [submodule "bundle/asciidoc"]
 	path = bundle/asciidoc
-	url = git://github.com/vim-scripts/asciidoc.vim.git
+	url = https://github.com/vim-scripts/asciidoc.vim.git
 [submodule "bundle/Align"]
 	path = bundle/Align
-	url = git://github.com/vim-scripts/Align.git
+	url = https://github.com/vim-scripts/Align.git
 [submodule "bundle/DirDiff"]
 	path = bundle/DirDiff
-	url = git://github.com/vim-scripts/DirDiff.vim.git
+	url = https://github.com/vim-scripts/DirDiff.vim.git
 [submodule "bundle/file-line"]
 	path = bundle/file-line
-	url = git://github.com/vim-scripts/file-line.git
+	url = https://github.com/vim-scripts/file-line.git
 [submodule "bundle/indentpython"]
 	path = bundle/indentpython
-	url = git://github.com/vim-scripts/indentpython.vim.git
+	url = https://github.com/vim-scripts/indentpython.vim.git
 [submodule "bundle/lookupfile"]
 	path = bundle/lookupfile
-	url = git://github.com/vim-scripts/lookupfile.git
+	url = https://github.com/vim-scripts/lookupfile.git
 [submodule "bundle/matchit"]
 	path = bundle/matchit
-	url = git://github.com/vim-scripts/matchit.zip.git
+	url = https://github.com/vim-scripts/matchit.zip.git
 [submodule "bundle/taglist"]
 	path = bundle/taglist
-	url = git://github.com/vim-scripts/taglist.vim.git
+	url = https://github.com/vim-scripts/taglist.vim.git
 [submodule "bundle/multi-cursors"]
 	path = bundle/multi-cursors
-	url = git://github.com/terryma/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
@@ -40,3 +40,6 @@
 [submodule "bundle/rust"]
 	path = bundle/rust
 	url = https://github.com/rust-lang/rust.vim
+[submodule "bundle/vim-go"]
+	path = bundle/vim-go
+	url = https://github.com/fatih/vim-go.git
