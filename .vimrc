@@ -49,6 +49,34 @@ map <C-K> <Plug>(expand_region_shrink)
 " tagbar plugin
 nmap <F4> :TagbarToggle<CR><C-W><C-W>
 let g:tagbar_left = 1
+" tagbar supports GO
+let g:tagbar_type_go = {
+    \ 'ctagstype' : 'go',
+    \ 'kinds'     : [
+        \ 'p:package',
+        \ 'i:imports:1',
+        \ 'c:constants',
+        \ 'v:variables',
+        \ 't:types',
+        \ 'n:interfaces',
+        \ 'w:fields',
+        \ 'e:embedded',
+        \ 'm:methods',
+        \ 'r:constructor',
+        \ 'f:functions'
+    \ ],
+    \ 'sro' : '.',
+    \ 'kind2scope' : {
+        \ 't' : 'ctype',
+        \ 'n' : 'ntype'
+    \ },
+    \ 'scope2kind' : {
+        \ 'ctype' : 't',
+        \ 'ntype' : 'n'
+    \ },
+    \ 'ctagsbin'  : 'gotags',
+    \ 'ctagsargs' : '-sort -silent'
+\ }
 
 " ctags plugin
 let Tlist_Exit_OnlyWindow=1
@@ -66,6 +94,24 @@ let g:LookupFile_AllowNewFiles = 0
 if filereadable("./filenametags")
     let g:LookupFile_TagExpr = '"./filenametags"'
 endif
+
+" go syntax highlight
+let g:go_autodetect_gopath = 1
+let g:go_version_warning = 1
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_generate_tags = 1
+let g:go_highlight_structs = 1
+let g:go_loaded_gosnippets = 1
+let g:go_highlight_build_constraints = 1
+let g:go_jump_to_error = 1
+let g:go_loaded_install = 1
+
 
 " rust
 let g:rustfmt_autosave = 1
